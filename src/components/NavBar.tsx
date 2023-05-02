@@ -9,6 +9,7 @@ import {
 } from "react-icons/ai";
 import { useEffect, useState } from "react";
 import { NavLink } from "@/utils/type";
+import { useRouter } from "next/router";
 
 export default function Navbar() {
   const [showMenu, setShowMenu] = useState<boolean>(false);
