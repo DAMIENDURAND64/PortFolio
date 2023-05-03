@@ -13,7 +13,7 @@ export default function Home() {
           </div>
           <div className="flex flex-col justify-end items-start  xxs:h-[280px] sm:h-[430px] h-[345px] w-full">
             <hr className="w-full rounded-sm bg-Orange h-3 border-none" />
-            <div className="sm:text-[7.2rem] xs:text-7xl text-5xl text-White font-medium">
+            <div className="sm:text-[7.2rem] xs:text-7xl text-5xl text-White font-medium  w-full">
               Damien
             </div>
 
