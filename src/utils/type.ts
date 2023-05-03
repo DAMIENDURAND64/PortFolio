@@ -14,3 +14,12 @@ export type FormValues = {
   phone: number;
   message: string;
 };
+
+export type ProjectProps = {
+  id: number;
+  img: string;
+  name: string;
+  deployment: string;
+  linkGitHub: string;
+  tools: string[];
+};
