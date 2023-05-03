@@ -1,9 +1,63 @@
-import React from "react";
+import Link from "next/link";
+import Image from "next/image";
+import Head from "next/head";
+import Wrapper from "@/components/Wrapper";
+import Skills from "@/components/Skills";
 
-type Props = {};
-
-function index({}: Props) {
-  return <div>index</div>;
+export default function about() {
+  return (
+    <>
+      <Head>
+        <title>Damien Durand | About</title>
+      </Head>
+      <Wrapper>
+        <div className="flex flex-col gap-12 lg:flex-row items-center justify-center mb-12 min-h-screen lg:mb-0 pt-28 lg:pt-0">
+          <Image
+            src={"/about.jpg"}
+            width={300}
+            height={300}
+            alt={"about image"}
+          />
+          <div className="lg:w-1/2 lg:ml-8 max-w-md md:max-w-xl ">
+            <div className="font-semibold text-3xl mt-8 text-White uppercase">
+              FullStack developer, based in Biarritz, France
+            </div>
+            <p className="text-WhiteGray text-lg mt-8 leading-7">
+              Though I once put my passion for web development on hold to travel
+              and work abroad for a while, I&apos;m now eager to leverage my
+              creativity, motivation for tackling challenges, and interest in
+              staying current with new technologies to make a positive impact on
+              users. As a full-stack developer, I am excited to collaborate on
+              projects that combine my love for coding and my desire to create
+              innovative, user-focused web solutions.
+            </p>
+            <div className="flex gap-8 mt-8 ">
+              <Link
+                href="/contact"
+                className="text-Orange font-semibold text-sm uppercase hover:underline"
+              >
+                Contact Me
+              </Link>
+              <a
+                href="/pdf/resume.pdf"
+                download
+                className="text-Orange font-semibold text-sm uppercase hover:underline"
+              >
+                Resume
+              </a>
+            </div>
+          </div>
+          <div className="absolute bottom-12">
+            <Image
+              src="/arrow-down.jpeg"
+              alt="continuer vers le bas"
+              width={50}
+              height={50}
+            />
+          </div>
+        </div>
+        <Skills />
+      </Wrapper>
+    </>
+  );
 }
-
-export default index;

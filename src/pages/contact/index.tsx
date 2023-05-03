@@ -56,7 +56,7 @@ export default function Contact() {
       <Head>
         <title>Damien Durand | Contact</title>
       </Head>
-      <Wrapper className="text-White gap-12 flex flex-col justify-center items-center lg:flex-row pt-28 lg:pt-0">
+      <Wrapper className="text-White gap-12 flex flex-col justify-center items-center lg:flex-row pt-28 lg:pt-24">
         <div className="md:px-6 py-6 text-center">
           <div className="uppercase md:text-4xl text-3xl md:tracking-widest tracking-wide font-semibold">
             Contact
@@ -68,7 +68,7 @@ export default function Contact() {
             team and deliver efficient results.
           </p>
         </div>
-        <div className="lg:w-1/2 sm:w-[30rem] px-6 text-center py-6 shadow-ShadowBlur">
+        <div className="lg:w-1/2 sm:w-[40rem] px-6 text-center py-6 shadow-ShadowBlur ">
           <div className="uppercase md:text-4xl text-3xl md:tracking-widest tracking-wide font-semibold mb-10">
             Contact Form
           </div>
@@ -114,7 +114,7 @@ export default function Contact() {
             </div>
             <div className="flex items-center border-b border-White py-2 mb-8">
               <textarea
-                className=" appearance-none bg-transparent border-none w-full text-White mr-3 py-1 px-2 leading-tight focus:outline-none"
+                className=" appearance-none bg-transparent border-none w-full text-White mr-3 py-1 px-2 leading-tight focus:outline-none max-h-36"
                 placeholder="Message"
                 {...register("message")}
               />
