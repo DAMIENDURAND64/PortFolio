@@ -41,13 +41,7 @@ function Skills({}: Props) {
               whileHover={{ scale: 1.3 }}
               transition={{ type: "spring", bounce: 0.7, duration: 1 }}
             >
-              <Image
-                src={image.src}
-                alt={image.alt}
-                height={130}
-                width={130}
-                className="rounded-full"
-              />
+              <Image src={image.src} alt={image.alt} height={130} width={130} />
               <div className="absolute inset-0 right-24 bottom-16 flex items-center justify-center opacity-0 group-hover:opacity-100 transition-all duration-300">
                 <div className="bg-black text-white text-sm py-1 px-2 rounded-md">
                   {image.alt}
