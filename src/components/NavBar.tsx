@@ -6,10 +6,10 @@ import {
   AiFillGithub,
   AiFillInstagram,
   AiFillTwitterCircle,
+  AiFillLinkedin,
 } from "react-icons/ai";
 import { useEffect, useState } from "react";
 import { NavLink } from "@/utils/type";
-import { useRouter } from "next/router";
 
 export default function Navbar() {
   const [showMenu, setShowMenu] = useState<boolean>(false);
@@ -57,7 +57,7 @@ export default function Navbar() {
   };
   const isActive = (path: string) =>
     pathname === path ? "text-Orange" : "text-WhiteGray";
-  const socialClassNames = "text-3xl cursor-pointer text-White";
+  const socialClassNames = "text-3xl cursor-pointer text-White h-10 w-10";
   return (
     <header
       className={`fixed w-full top-0 left-0 z-20 ${
@@ -118,14 +118,11 @@ export default function Navbar() {
           </Link>
         ))}
         <div className="fixed bottom-4 left-6 flex items-center flex-col gap-4">
-          <Link href="https://www.github.com">
+          <Link href={"https://github.com/Damsbot64"}>
             <AiFillGithub className={socialClassNames} />
           </Link>
-          <Link href="https://www.instagram.com">
-            <AiFillInstagram className={socialClassNames} />
-          </Link>
-          <Link href="https://www.twitter.com">
-            <AiFillTwitterCircle className={socialClassNames} />
+          <Link href={"https://www.linkedin.com/in/damien-durand-952515247/"}>
+            <AiFillLinkedin className={socialClassNames} />
           </Link>
         </div>
         <HiX

@@ -35,7 +35,7 @@ export default function About() {
               projects that combine my love for coding and my desire to create
               innovative, user-focused web solutions.
             </p>
-            <div className="flex gap-8 mt-8 ">
+            <div className="flex gap-8 xxs:mt-4 md:mt-10 mt-20">
               <Link
                 href="/contact"
                 className="text-Orange font-semibold text-sm uppercase hover:underline"
@@ -43,7 +43,7 @@ export default function About() {
                 Contact Me
               </Link>
               <a
-                href="/pdf/resume.pdf"
+                href="/pdf/Alternance-SeptembreCV_DamienDurand.pdf"
                 download
                 className="text-Orange font-semibold text-sm uppercase hover:underline"
               >
