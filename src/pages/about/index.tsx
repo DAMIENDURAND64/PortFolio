@@ -3,15 +3,19 @@ import Image from "next/image";
 import Head from "next/head";
 import Wrapper from "@/components/Wrapper";
 import Skills from "@/components/Skills";
+import { useScroll, motion, useTransform } from "framer-motion";
 
-export default function about() {
+export default function About() {
+  const { scrollYProgress } = useScroll();
+  const opacity = useTransform(scrollYProgress, [0, 1], [1, 0]);
+
   return (
     <>
       <Head>
         <title>Damien Durand | About</title>
       </Head>
       <Wrapper>
-        <div className="flex flex-col gap-12 lg:flex-row items-center justify-center mb-12 min-h-screen lg:mb-0 pt-28 lg:pt-0">
+        <div className="flex flex-col gap-12 lg:flex-row items-center justify-center mb-12 min-h-screen lg:mb-0 pt-28 lg:pt-0 ">
           <Image
             src={"/about.jpg"}
             width={300}
@@ -47,13 +51,16 @@ export default function about() {
               </a>
             </div>
           </div>
-          <div className="absolute bottom-12">
-            <Image
-              src="/arrow-down.jpeg"
-              alt="continuer vers le bas"
-              width={50}
-              height={50}
-            />
+          <div className="absolute bottom-12 xxs:hidden md:block">
+            <motion.div style={{ opacity }}>
+              <Image
+                src="/arrow-down.jpeg"
+                alt="continuer vers le bas"
+                width={50}
+                height={50}
+                className="xl:w-16 xl:h-16"
+              />
+            </motion.div>
           </div>
         </div>
         <Skills />
