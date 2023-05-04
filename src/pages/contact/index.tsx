@@ -56,19 +56,19 @@ export default function Contact() {
       <Head>
         <title>Damien Durand | Contact</title>
       </Head>
-      <Wrapper className="text-White gap-12 flex flex-col justify-center items-center lg:flex-row pt-28 lg:pt-24">
+      <Wrapper className="text-White gap-12 flex flex-col justify-center items-center lg:flex-row pt-28 lg:pt-24 ">
         <div className="md:px-6 py-6 text-center">
           <div className="uppercase md:text-4xl text-3xl md:tracking-widest tracking-wide font-semibold">
             Contact
           </div>
-          <p className="leading-8 mb-8 text-xl text-start max-w-xl mt-10 text-WhiteGray">
+          <p className="leading-8 mb-8 text-xl  max-w-xl mt-10 text-WhiteGray">
             If you&apos;re looking for a motivated and passionate fullStack
             developer to help bring your web application ideas to life, feel
             free to contact me. Let&apos;s discuss how I can contribute to your
             team and deliver efficient results.
           </p>
         </div>
-        <div className="lg:w-1/2 sm:w-[40rem] px-6 text-center py-6 shadow-ShadowBlur ">
+        <div className="lg:w-[550px] sm:w-[40rem] md:w-[490px] px-6 text-center py-6 shadow-ShadowBlur xxs:w-full ">
           <div className="uppercase md:text-4xl text-3xl md:tracking-widest tracking-wide font-semibold mb-10">
             Contact Form
           </div>
