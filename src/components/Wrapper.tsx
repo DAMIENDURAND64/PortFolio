@@ -3,7 +3,7 @@ import Link from "next/link";
 import { AiFillGithub, AiFillLinkedin } from "react-icons/ai";
 
 export default function Wrapper({ children, className }: WrapperProps) {
-  const socialClassNames = "text-3xl cursor-pointer text-White";
+  const socialClassNames = "text-3xl cursor-pointer text-White xl:w-14 xl:h-14";
   return (
     <section className={className}>
       <div className="fixed w-[20rem] h-[20rem] xs:w-[28rem] xs:h-[28rem] md:w-[50rem] md:h-[50rem]  md:-left-10 md:-top-40 -z-10 bg-Blur rounded-full blur-3xl"></div>
