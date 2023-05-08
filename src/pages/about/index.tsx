@@ -15,15 +15,17 @@ export default function About() {
         <title>Damien Durand | About</title>
       </Head>
       <Wrapper>
-        <div className="flex flex-col gap-12 lg:flex-row items-center justify-center mb-12 min-h-screen lg:mb-0 pt-28 lg:pt-0 ">
+        <div className="flex flex-col gap-2 lg:flex-row items-center justify-center mb-12 min-h-screen lg:mb-0 pt-28 lg:pt-0 ">
           <Image
-            src={"/about.jpg"}
+            src={"/portfolio.jpg"}
             width={300}
-            height={300}
-            alt={"about image"}
+            height={240}
+            alt={"this is me"}
+            className="rounded-md md:w-[400px] md:h-[320px] object-cover"
+            priority
           />
           <div className="lg:w-1/2 lg:ml-8 max-w-md md:max-w-xl ">
-            <div className="font-semibold text-3xl mt-8 text-White uppercase">
+            <div className="font-semibold text-3xl mt-8 text-White uppercase text-center">
               FullStack developer, based in Biarritz, France
             </div>
             <p className="text-WhiteGray text-lg mt-8 leading-7">
