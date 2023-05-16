@@ -29,7 +29,30 @@ export default function Portfolio() {
       name: "Ma petite Cave  (En cours)",
       deployment: "",
       linkGitHub: "",
-      tools: ["NextJS", "TypeScript", "Tailwind", "tRPC", "Prisma"],
+      tools: [
+        "NextJS",
+        "TypeScript",
+        "Tailwind",
+        "tRPC",
+        "Prisma",
+        "PostgreSQL",
+      ],
+    },
+    {
+      id: 4,
+      img: "/enedis.png",
+      name: "Enedis Share",
+      deployment: "https://enedis-share.vercel.app/",
+      linkGitHub: "https://github.com/Damsbot64/Project-3_EnedisShare_front",
+      tools: [
+        "NextJS",
+        "TypeScript",
+        "Tailwind",
+        "Prisma",
+        "PostgreSQL",
+        "Express",
+        "NodeJS",
+      ],
     },
   ];
   return (
