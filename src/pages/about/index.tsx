@@ -45,7 +45,7 @@ export default function About() {
                 Contact Me
               </Link>
               <a
-                href="/pdf/Alternance-SeptembreCV_DamienDurand.pdf"
+                href="/pdf/CV_DamienDurand_MDS.pdf"
                 download
                 className="text-Orange font-semibold text-sm uppercase hover:underline"
               >
