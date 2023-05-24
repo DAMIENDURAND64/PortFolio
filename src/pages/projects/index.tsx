@@ -26,9 +26,9 @@ export default function Portfolio() {
     {
       id: 3,
       img: "/Cave.png",
-      name: "Ma petite Cave  (En cours)",
-      deployment: "",
-      linkGitHub: "",
+      name: "Ma petite Cave (En cours, version Mobile)",
+      deployment: "https://main-cave.vercel.app",
+      linkGitHub: "https://github.com/Damsbot64/Ma-petite-Cave",
       tools: [
         "NextJS",
         "TypeScript",
@@ -91,7 +91,7 @@ export default function Portfolio() {
                     />
                   </div>
                   <div className="absolute w-full h-full rounded-md bg-Orange top-0 left-0 z-10 flex items-center justify-center gap-4 scale-0 group-hover:scale-100 transition-all duration-300">
-                    <Link href={project.linkGitHub}>
+                    <Link href={project.linkGitHub} target="_blank">
                       <motion.div
                         whileHover={{ scale: 1.6 }}
                         transition={{
@@ -103,7 +103,7 @@ export default function Portfolio() {
                         <AiFillGithub className="text-3xl hover:scale-110 transition-all duration-300" />
                       </motion.div>
                     </Link>
-                    <Link href={project.deployment}>
+                    <Link href={project.deployment} target="_blank">
                       <motion.div
                         whileHover={{ scale: 1.6 }}
                         transition={{
